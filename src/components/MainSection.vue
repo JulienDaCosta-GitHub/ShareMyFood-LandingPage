@@ -25,14 +25,14 @@ export default {
 
 <style scoped>
   .main-section {
-    height: calc(100vh - 60px);
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .main-section-logo-and-text {
-    transform: translate(-65%, -70%);
+    transform: translate(-65%, -60%);
     left: 50%;
     top: 50%;
     position: absolute;
