@@ -13,7 +13,7 @@
 
       <div class="what-is-sharemyfood-screenshots">
         <img src="src/assets/img/screenshot-sharemyfood2.png" alt="screenshot2">
-        <img src="src/assets/img/screenshot-sharemyfood.png" alt="screenshot">
+        <img class="screenshot-img1" src="src/assets/img/screenshot-sharemyfood.png" alt="screenshot">
       </div>
     </div>
   </div>
@@ -27,16 +27,34 @@ export default {
 
 <style scoped>
 h2 {
+  font-weight: 600;
   margin-bottom: 50px;
 }
 .what-is-sharemyfood {
   height: 700px;
   background-color: #6FAE3A;
-  padding: 80px 150px;
+  padding: 80px 250px;
 }
 
 .what-is-sharemyfood-container {
   display: flex;
+}
+
+.what-is-sharemyfood-text h2,
+.what-is-sharemyfood-text p {
+  color: white;
+}
+
+.what-is-sharemyfood-text {
+  margin-right: 215px;
+}
+
+.what-is-sharemyfood-text h2 {
+  font-size: 22px;
+}
+
+.what-is-sharemyfood-text p {
+  font-size: 16px;
 }
 
 .what-is-sharemyfood-screenshots {
@@ -45,5 +63,11 @@ h2 {
 
 .what-is-sharemyfood-screenshots img {
   height: 500px;
+}
+
+.screenshot-img1 {
+  position: relative;
+  top: 15px;
+  right: 115px;
 }
 </style>
