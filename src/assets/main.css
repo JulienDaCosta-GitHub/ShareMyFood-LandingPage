@@ -1,0 +1,7 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+p, a {
+    font-family: 'Quicksand', sans-serif;
+}
+
