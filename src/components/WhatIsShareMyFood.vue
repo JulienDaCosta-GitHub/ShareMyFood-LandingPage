@@ -2,13 +2,17 @@
   <div class="what-is-sharemyfood">
     <div class="what-is-sharemyfood-container">
       <div class="what-is-sharemyfood-text">
-        <h2>Qu’est-ce que ShareMyFood ?</h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non nisl semper, ullamcorper magna id, fermentum justo. Duis sit amet metus metus. Nunc tincidunt lectus metus, eget congue metus imperdiet a. Mauris condimentum metus et leo placerat viverra.</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non nisl semper, ullamcorper magna id, fermentum justo. Duis sit amet metus metus. Nunc tincidunt lectus metus, eget congue metus imperdiet a. Mauris condimentum metus et leo placerat viverra.</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non nisl semper, ullamcorper magna id, fermentum justo. Duis sit amet metus metus. Nunc tincidunt lectus metus, eget congue metus imperdiet a. Mauris condimentum metus et leo placerat viverra.</p>
+        <div>
+          <h2>Qu’est-ce que ShareMyFood ?</h2>
+          <div>
+            <p>ShareMyFood est une application innovante de partage de nourriture conçue pour permettre aux utilisateurs de donner ou vendre de la nourriture non consommée à d'autres personnes qui en ont besoin</p>
+            <br>
+            <p>Il s’agit d’une solution pratique pour éviter le gaspillage alimentaire et encourager le partage de nourriture entre les membres de la communauté. Elle permet également de favoriser la réduction de la production de déchets alimentaires et de contribuer à la protection de l'environnement.</p>
+          </div>
+        </div>
+        <div class="application-test-button">
+          <button>Tester l'application</button>
+        </div>
       </div>
 
       <div class="what-is-sharemyfood-screenshots">
@@ -31,7 +35,7 @@ h2 {
   margin-bottom: 50px;
 }
 .what-is-sharemyfood {
-  height: 700px;
+  min-height: 700px;
   background-color: #6FAE3A;
   padding: 80px 250px;
 }
@@ -46,7 +50,7 @@ h2 {
 }
 
 .what-is-sharemyfood-text {
-  margin-right: 215px;
+  margin-right: 360px;
 }
 
 .what-is-sharemyfood-text h2 {
@@ -69,5 +73,19 @@ h2 {
   position: relative;
   top: 15px;
   right: 115px;
+}
+
+.application-test-button button {
+  background-color: white;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 50px;
+  color: black;
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
 }
 </style>
