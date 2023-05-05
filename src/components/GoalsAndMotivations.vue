@@ -2,7 +2,6 @@
 <div class="goals-and-motivations">
   <div class="goals-and-motivations-container">
     <h2>Nos objectifs et motivations</h2>
-
     <div class="goals-and-motivations-lists">
       <div class="goals-and-motivations-each-list">
         <h3 class="goals-and-motivations-lists-title">Nos objectifs</h3>
@@ -25,7 +24,6 @@
         </div>
       </div>
     </div>
-
     <div class="goals-and-motivations-img">
       <img src="src/assets/img/planet.png" alt="planet">
     </div>
@@ -73,5 +71,6 @@ export default {
 .goals-and-motivations-img {
   text-align: center;
   margin-top: 50px;
+  height: 160px;
 }
 </style>

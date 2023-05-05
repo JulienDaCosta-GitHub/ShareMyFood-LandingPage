@@ -10,7 +10,7 @@
             <p>Il s’agit d’une solution pratique pour éviter le gaspillage alimentaire et encourager le partage de nourriture entre les membres de la communauté. Elle permet également de favoriser la réduction de la production de déchets alimentaires et de contribuer à la protection de l'environnement.</p>
           </div>
         </div>
-        <div class="application-test-button">
+        <div class="application-test-btn">
           <button>Tester l'application</button>
         </div>
       </div>
@@ -50,7 +50,7 @@ h2 {
 }
 
 .what-is-sharemyfood-text {
-  margin-right: 360px;
+  margin-right: 250px;
 }
 
 .what-is-sharemyfood-text h2 {
@@ -75,7 +75,7 @@ h2 {
   right: 115px;
 }
 
-.application-test-button button {
+.application-test-btn button {
   background-color: white;
   height: 50px;
   border: none;
