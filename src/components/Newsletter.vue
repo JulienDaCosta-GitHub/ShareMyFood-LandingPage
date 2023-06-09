@@ -1,13 +1,41 @@
 <template>
   <div class="newsletter-container">
-    <input type="text">
-    <button>S'inscrire</button>
+    <form @submit="handleSubmit">
+      <input type="text" v-model="formData.email">
+      <button type="submit">S'inscrire</button>
+    </form>
   </div>
 </template>
 
 <script>
+import firebase from 'firebase/compat/app';
+import 'firebase/firestore';
+
 export default {
-  name: "Newsletter"
+  name: "Newsletter",
+  data() {
+    return {
+      formData: {
+        email: '',
+      }
+    };
+  },
+  methods: {
+    handleSubmit(event) {
+      event.preventDefault();
+
+      const db = firebase.firestore();
+      db.collection('contacts').add(this.formData)
+          .then(() => {
+            console.log('Formulaire soumis avec succès');
+          })
+          .catch(error => {
+            console.error('Erreur lors de l\'envoi du formulaire :', error);
+          });
+
+      this.formData.email = '';
+    }
+  }
 };
 </script>
 
