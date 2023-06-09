@@ -67,15 +67,16 @@ export default {
     position: absolute;
     top: 100%;
     left: 0;
-    padding: 30px 10px;
+    padding: 30px 20px;
     width: 180px;
     list-style: none;
     background-color: #6FAE3A;
     z-index: 1;
   }
   .header-burger-menu-container a {
-    text-decoration: none;
     color: white;
+    font-weight: 600;
+    text-decoration: none;
   }
   .header-burger-menu-container a:not(:first-child) {
     margin-top: 15px;
