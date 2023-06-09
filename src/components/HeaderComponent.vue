@@ -7,7 +7,8 @@
       <a href="#team">Notre équipe</a>
     </div>
     <div class="header-burger-menu">
-      <img class="burger-menu-icon" @click="toggleMenu" src="src/assets/img/burger_menu.png" alt="">
+      <img v-show="!isOpen" class="burger-menu-icon" @click="toggleMenu" src="src/assets/img/burger_menu.png" alt="">
+      <img v-show="isOpen" class="close-menu-icon" @click="toggleMenu" src="src/assets/img/close.png" alt="">
       <div v-show="isOpen" class="header-burger-menu-container">
         <a href="#whoweare">Qui sommes-nous</a>
         <a href="#goals">Nos objectifs</a>
@@ -56,6 +57,10 @@ export default {
   }
   .burger-menu-icon {
     height: 45px;
+    margin-left: 15px;
+  }
+  .close-menu-icon {
+    height: 25px;
     margin-left: 15px;
   }
   .header-container {
