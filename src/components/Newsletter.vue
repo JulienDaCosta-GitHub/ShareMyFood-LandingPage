@@ -34,6 +34,9 @@ export default {
 </script>
 
 <style scoped>
+.newsletter-container {
+  width: 800px;
+}
 .newsletter-container input {
   width: 500px;
   height: 50px;

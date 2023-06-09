@@ -33,7 +33,6 @@ export default {
 .what-is-sharemyfood {
   min-height: 700px;
   background-color: #6FAE3A;
-  padding: 80px 250px;
 }
 
 .what-is-sharemyfood-container {
@@ -43,10 +42,6 @@ export default {
 .what-is-sharemyfood-text h2,
 .what-is-sharemyfood-text p {
   color: white;
-}
-
-.what-is-sharemyfood-text {
-  margin-right: 250px;
 }
 
 .what-is-sharemyfood-text h2 {
@@ -62,16 +57,7 @@ export default {
 
 .what-is-sharemyfood-screenshots {
   display: flex;
-}
-
-.what-is-sharemyfood-screenshots img {
-  height: 500px;
-}
-
-.screenshot-img1 {
   position: relative;
-  top: 15px;
-  right: 115px;
 }
 
 .application-test-btn button {
@@ -121,6 +107,55 @@ button:hover {
   }
   .what-is-sharemyfood-screenshots {
     justify-content: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .what-is-sharemyfood-screenshots img {
+    height: 430px;
+  }
+  .what-is-sharemyfood {
+    padding: 80px 150px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .what-is-sharemyfood-screenshots img {
+    height: 450px;
+  }
+  .what-is-sharemyfood {
+    padding: 80px 200px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .what-is-sharemyfood-text {
+    margin-right: 100px;
+  }
+  .screenshot-img1 {
+    position: absolute;
+    top: 15px;
+    right: -112px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .what-is-sharemyfood {
+    padding: 80px 250px;
+  }
+  .what-is-sharemyfood-text {
+    margin-right: 150px;
+  }
+  .what-is-sharemyfood-screenshots img {
+    height: 500px;
+  }
+  .screenshot-img1 {
+    position: absolute;
+    top: 15px;
+    right: -112px;
+  }
+  .what-is-sharemyfood-screenshots {
+    margin-right: 120px;
   }
 }
 </style>
