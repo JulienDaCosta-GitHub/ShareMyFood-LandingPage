@@ -6,7 +6,6 @@ import './assets/main.css'
 
 createApp(App).mount('#app')
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: 'AIzaSyCfHjoPmyDV7RSPRU8MsDCuVGyp42R6sek',
     appId: '1:934591545381:web:0b99ace1c3fa5a70333fcc',
