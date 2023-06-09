@@ -5,7 +5,7 @@
         <div>
           <h2>Qu’est-ce que ShareMyFood ?</h2>
           <div>
-            <p>ShareMyFood est une application innovante de partage de nourriture conçue pour permettre aux utilisateurs de donner ou vendre de la nourriture non consommée à d'autres personnes qui en ont besoin</p>
+            <p>ShareMyFood est une application innovante de partage de nourriture conçue pour permettre aux utilisateurs de donner ou vendre de la nourriture non consommée à d'autres personnes qui en ont besoin.</p>
             <br>
             <p>Il s’agit d’une solution pratique pour éviter le gaspillage alimentaire et encourager le partage de nourriture entre les membres de la communauté. Elle permet également de favoriser la réduction de la production de déchets alimentaires et de contribuer à la protection de l'environnement.</p>
           </div>

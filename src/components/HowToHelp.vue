@@ -2,7 +2,7 @@
   <div id="help" class="how-to-help">
     <div class="how-to-help-container">
       <h2>Comment nous aider ?</h2>
-      <p>Nous sommes une organisation à but non lucratif qui dépend de la générosité de nos donateurs et de nos bénévoles pour réaliser notre mission. Si vous souhaitez nous aider, il y a plusieurs façons de le faire. Vous pouvez tout d'abord faire un don en ligne sur notre site internet, qui nous permettra de financer nos projets et nos activités. Vous pouvez également devenir bénévole et nous aider sur le terrain en participant à nos événements ou en nous aidant à promouvoir notre organisation auprès de votre communauté. Enfin, vous pouvez nous aider en parlant de nous autour de vous et en partageant notre message sur les réseaux sociaux. Chaque geste compte et nous sommes reconnaissants pour votre soutien à notre cause. Merci d'avance pour votre aide !</p>
+      <p>Nous sommes une organisation à but non lucratif qui dépend de nos utilisateurs pour réaliser notre mission. Si vous souhaitez nous aider, il y a plusieurs façons de le faire. Vous pouvez tout d'abord remplir notre formulaire afin de nous donner des conseils ou nous faire des recommandations qui pourraient nous permettre de nous améliorer. Nous lirons vos réponses avec grand plaisir. Vous pouvez également nous aider en parlant de nous autour de vous et en partageant notre message sur les réseaux sociaux. Chaque geste compte et nous sommes reconnaissants pour votre soutien à notre cause. Merci d'avance pour votre aide !</p>
       <div class="how-to-help-btn">
         <button>Notre formulaire</button>
       </div>
