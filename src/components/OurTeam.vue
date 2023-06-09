@@ -1,5 +1,5 @@
 <template>
-  <div class="our-team">
+  <div id="team" class="our-team">
     <div class="our-team-container">
       <h2>Notre équipe</h2>
       <div class="our-team-all">

@@ -1,5 +1,5 @@
 <template>
-<div class="goals-and-motivations">
+<div id="goals" class="goals-and-motivations">
   <div class="goals-and-motivations-container">
     <h2>Nos objectifs et motivations</h2>
     <div class="goals-and-motivations-lists">

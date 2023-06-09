@@ -1,5 +1,5 @@
 <template>
-  <div class="what-is-sharemyfood">
+  <div id="whoweare" class="what-is-sharemyfood">
     <div class="what-is-sharemyfood-container">
       <div class="what-is-sharemyfood-text">
         <div>
@@ -112,6 +112,12 @@ h2 {
   }
   .application-test-btn button {
     margin-bottom: 100px;
+  }
+  .application-test-btn {
+    text-align: center;
+  }
+  .what-is-sharemyfood-screenshots {
+    justify-content: center;
   }
 }
 </style>
