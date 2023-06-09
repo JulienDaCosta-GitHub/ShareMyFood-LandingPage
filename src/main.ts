@@ -1,8 +1,7 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
+import App from './App.vue';
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 import './assets/main.css'
 
 createApp(App).mount('#app')
@@ -18,4 +17,5 @@ const firebaseConfig = {
     measurementId: 'G-62240S5M0Z',
 };
 
-firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);

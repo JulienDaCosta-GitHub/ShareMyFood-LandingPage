@@ -1,6 +1,6 @@
 <template>
   <div class="newsletter-container">
-    <form @submit="handleSubmit">
+    <form @submit.prevent="handleSubmit">
       <input type="text" v-model="formData.email">
       <button type="submit">S'inscrire</button>
     </form>
@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import firebase from 'firebase/compat/app';
-import 'firebase/firestore';
+import { collection, addDoc } from "firebase/firestore";
+import { db } from '@/main';
 
 export default {
   name: "Newsletter",
@@ -21,19 +21,13 @@ export default {
     };
   },
   methods: {
-    handleSubmit(event) {
-      event.preventDefault();
-
-      const db = firebase.firestore();
-      db.collection('contacts').add(this.formData)
-          .then(() => {
-            console.log('Formulaire soumis avec succès');
-          })
-          .catch(error => {
-            console.error('Erreur lors de l\'envoi du formulaire :', error);
-          });
-
-      this.formData.email = '';
+    async handleSubmit() {
+      try {
+        const docRef = await addDoc(collection(db, "contacts"), this.formData);
+        console.log("Document ajouté avec ID :", docRef.id);
+      } catch (error) {
+        console.error("Erreur lors de l'ajout du document :", error);
+      }
     }
   }
 };
