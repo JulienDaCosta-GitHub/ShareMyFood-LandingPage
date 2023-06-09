@@ -44,9 +44,10 @@ export default {
 }
 
 .goals-and-motivations h2 {
+  font-weight: 600;
   margin-bottom: 50px;
   font-size: 22px;
-  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .goals-and-motivations-lists {
@@ -58,10 +59,12 @@ export default {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .goals-and-motivations-lists-title-li {
   margin-bottom: 15px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .goals-and-motivations-each-list {

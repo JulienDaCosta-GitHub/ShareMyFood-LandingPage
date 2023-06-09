@@ -76,6 +76,8 @@ export default {
 h2 {
   font-weight: 600;
   margin-bottom: 50px;
+  font-size: 22px;
+  font-family: 'Quicksand', sans-serif;
 }
 .our-team {
   min-height: 700px;

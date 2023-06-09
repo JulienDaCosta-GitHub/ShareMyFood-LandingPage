@@ -30,10 +30,6 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-  font-weight: 600;
-  margin-bottom: 50px;
-}
 .what-is-sharemyfood {
   min-height: 700px;
   background-color: #6FAE3A;
@@ -55,6 +51,9 @@ h2 {
 
 .what-is-sharemyfood-text h2 {
   font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .what-is-sharemyfood-text p {
@@ -87,6 +86,10 @@ h2 {
   font-size: 18px;
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 991.98px) {

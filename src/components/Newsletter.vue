@@ -56,6 +56,10 @@ export default {
   font-family: 'Quicksand', sans-serif;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 991.98px) {
   .newsletter-container input {
     width: 100%;

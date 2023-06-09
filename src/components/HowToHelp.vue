@@ -25,9 +25,10 @@ export default {
 
 .how-to-help-container h2 {
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 50px;
   font-size: 22px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .how-to-help-container p {
@@ -51,6 +52,10 @@ export default {
   font-size: 18px;
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 991.98px) {
