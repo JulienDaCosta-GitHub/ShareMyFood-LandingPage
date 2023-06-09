@@ -33,4 +33,25 @@ export default {
   font-size: 22px;
   font-family: 'Quicksand', sans-serif;
 }
+
+@media (max-width: 991.98px) {
+  .newsletter-container input {
+    width: 100%;
+  }
+
+  .newsletter-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter-container button {
+    margin-left: unset;
+    margin-top: 15px;
+  }
+}
 </style>

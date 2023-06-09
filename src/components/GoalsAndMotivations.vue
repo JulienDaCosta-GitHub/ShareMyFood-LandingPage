@@ -73,4 +73,16 @@ export default {
   margin-top: 50px;
   height: 160px;
 }
+
+@media (max-width: 991.98px) {
+  .goals-and-motivations {
+    padding: 50px 30px;
+  }
+  .goals-and-motivations-lists {
+    flex-direction: column;
+  }
+  .goals-and-motivations-each-list {
+    width: unset;
+  }
+}
 </style>

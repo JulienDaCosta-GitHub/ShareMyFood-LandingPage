@@ -16,8 +16,10 @@
       </div>
 
       <div class="what-is-sharemyfood-screenshots">
-        <img src="src/assets/img/screenshot-sharemyfood2.png" alt="screenshot2">
-        <img class="screenshot-img1" src="src/assets/img/screenshot-sharemyfood.png" alt="screenshot">
+        <div>
+          <img src="src/assets/img/screenshot-sharemyfood2.png" alt="screenshot2">
+          <img class="screenshot-img1" src="src/assets/img/screenshot-sharemyfood.png" alt="screenshot">
+        </div>
       </div>
     </div>
   </div>
@@ -87,5 +89,31 @@ h2 {
   font-size: 18px;
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;
+}
+
+@media (max-width: 991.98px) {
+  .what-is-sharemyfood {
+    padding: unset;
+  }
+  .what-is-sharemyfood-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .what-is-sharemyfood-screenshots img {
+    height: 250px;
+  }
+  .what-is-sharemyfood-text {
+    margin-right: unset;
+  }
+  .what-is-sharemyfood-container {
+    padding: 30px;
+  }
+  .what-is-sharemyfood-text h2 {
+    margin-top: 50px;
+  }
+  .screenshot-img1 {
+    position: unset;
+    right: unset;
+  }
 }
 </style>

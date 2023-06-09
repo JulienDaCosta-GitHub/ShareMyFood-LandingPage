@@ -6,7 +6,7 @@
         <div class="our-team-each-row first-row">
           <div class="our-team-each-profile">
             <div class="our-team-each-profile-img">
-              <img src="src/assets/img/planet.png" alt="">
+              <img src="src/assets/img/alexandre.png" alt="">
             </div>
             <div>
               <p>Alexandre Duval</p>
@@ -15,7 +15,7 @@
           </div>
           <div class="our-team-each-profile">
             <div class="our-team-each-profile-img">
-              <img src="src/assets/img/planet.png" alt="">
+              <img src="src/assets/img/antoine.png" alt="">
             </div>
             <div>
               <p>Antoine Duplouy</p>
@@ -24,7 +24,7 @@
           </div>
           <div class="our-team-each-profile">
             <div class="our-team-each-profile-img">
-              <img src="src/assets/img/planet.png" alt="">
+              <img src="src/assets/img/alizee.png" alt="">
             </div>
             <div>
               <p>Alizée Gillouaye</p>
@@ -35,7 +35,7 @@
         <div class="our-team-each-row second-row">
           <div class="our-team-each-profile">
             <div class="our-team-each-profile-img">
-              <img src="src/assets/img/planet.png" alt="">
+              <img src="src/assets/img/johana.png" alt="">
             </div>
             <div>
               <p>Johana Bukal</p>
@@ -44,7 +44,7 @@
           </div>
           <div class="our-team-each-profile">
             <div class="our-team-each-profile-img">
-              <img src="src/assets/img/planet.png" alt="">
+              <img src="src/assets/img/theo.png" alt="">
             </div>
             <div>
               <p>Théo Popelin</p>
@@ -53,7 +53,7 @@
           </div>
           <div class="our-team-each-profile">
             <div class="our-team-each-profile-img">
-              <img src="src/assets/img/planet.png" alt="">
+              <img src="src/assets/img/julien.png" alt="">
             </div>
             <div>
               <p>Julien Da Costa</p>
@@ -102,5 +102,21 @@ h2 {
 
 .our-team-each-profile-img {
   text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .our-team {
+    padding: 50px 30px;
+  }
+  .our-team-each-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .our-team-each-row.first-row {
+    margin-bottom: unset;
+  }
+  .our-team-each-profile {
+    margin: 25px 0;
+  }
 }
 </style>

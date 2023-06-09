@@ -47,4 +47,22 @@ export default {
     font-size: 22px;
     width: 75%;
   }
+
+@media (max-width: 991.98px) {
+  .main-section-logo-and-text {
+    transform: none;
+    position: unset;
+    width: 100%;
+  }
+  .main-section-logo {
+    right: unset;
+    height: 100px;
+  }
+  .main-section-text {
+    width: unset;
+  }
+  .main-section-logo-and-text {
+    padding: 30px;
+  }
+}
 </style>

@@ -16,6 +16,11 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 991.98px) {
+  .header-redirections-container {
+    display: none;
+  }
+}
 
 .header-container {
   height: 60px;

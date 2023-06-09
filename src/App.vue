@@ -5,6 +5,7 @@ import WhatIsShareMyFood from "@/components/WhatIsShareMyFood.vue";
 import GoalsAndMotivations from "@/components/GoalsAndMotivations.vue";
 import HowToHelp from "@/components/HowToHelp.vue";
 import OurTeam from "@/components/OurTeam.vue";
+import Footer from "@/components/Footer.vue"
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import OurTeam from "@/components/OurTeam.vue";
   <GoalsAndMotivations></GoalsAndMotivations>
   <HowToHelp></HowToHelp>
   <OurTeam></OurTeam>
+  <Footer></Footer>
 </template>
 
 <style scoped>

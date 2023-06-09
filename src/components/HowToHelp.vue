@@ -52,4 +52,10 @@ export default {
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;
 }
+
+@media (max-width: 991.98px) {
+  .how-to-help {
+    padding: 50px 30px;
+  }
+}
 </style>
