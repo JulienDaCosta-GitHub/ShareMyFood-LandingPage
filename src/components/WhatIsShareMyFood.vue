@@ -95,7 +95,7 @@ h2 {
   }
   .what-is-sharemyfood-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .what-is-sharemyfood-screenshots img {
     height: 250px;
@@ -104,14 +104,14 @@ h2 {
     margin-right: unset;
   }
   .what-is-sharemyfood-container {
-    padding: 30px;
-  }
-  .what-is-sharemyfood-text h2 {
-    margin-top: 50px;
+    padding: 50px 30px;
   }
   .screenshot-img1 {
     position: unset;
     right: unset;
+  }
+  .application-test-btn button {
+    margin-bottom: 100px;
   }
 }
 </style>
