@@ -64,6 +64,10 @@ button:hover {
 }
 
 @media (max-width: 991.98px) {
+  .newsletter-container {
+    width: 100%;
+  }
+
   .newsletter-container input {
     width: 100%;
   }
