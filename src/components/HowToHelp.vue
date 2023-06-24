@@ -60,7 +60,7 @@ button:hover {
 
 @media (max-width: 991.98px) {
   .how-to-help {
-    padding: 50px 30px;
+    padding: 50px 24px;
   }
 }
 </style>

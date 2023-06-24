@@ -108,7 +108,7 @@ h2 {
 
 @media (max-width: 991.98px) {
   .our-team {
-    padding: 50px 30px;
+    padding: 50px 24px;
   }
   .our-team-each-row {
     flex-direction: column;

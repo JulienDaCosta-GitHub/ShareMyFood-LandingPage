@@ -93,7 +93,7 @@ button:hover {
     margin-right: unset;
   }
   .what-is-sharemyfood-container {
-    padding: 50px 30px;
+    padding: 50px 24px;
   }
   .screenshot-img1 {
     position: unset;

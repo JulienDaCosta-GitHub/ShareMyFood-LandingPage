@@ -55,7 +55,7 @@ export default {
     width: 100%;
   }
   .main-section-logo {
-    right: unset;
+    right: 35px;
     height: 100px;
   }
   .main-section-text {

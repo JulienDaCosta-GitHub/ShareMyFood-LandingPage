@@ -79,7 +79,7 @@ export default {
 
 @media (max-width: 991.98px) {
   .goals-and-motivations {
-    padding: 50px 30px;
+    padding: 50px 24px;
   }
   .goals-and-motivations-lists {
     flex-direction: column;

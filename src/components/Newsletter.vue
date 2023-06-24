@@ -64,10 +64,6 @@ button:hover {
 }
 
 @media (max-width: 991.98px) {
-  .newsletter-container {
-    width: 100%;
-  }
-
   .newsletter-container input {
     width: 100%;
   }
@@ -75,11 +71,8 @@ button:hover {
   .newsletter-container {
     display: flex;
     flex-direction: column;
-  }
-
-  .newsletter-container {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
+    width: 100%;
   }
 
   .newsletter-container button {
