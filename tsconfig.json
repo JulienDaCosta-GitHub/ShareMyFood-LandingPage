@@ -14,7 +14,7 @@
     },
     {
       "compilerOptions": {
-        "allowJs": false
+        "allowJs": true
       }
     }
   ]
