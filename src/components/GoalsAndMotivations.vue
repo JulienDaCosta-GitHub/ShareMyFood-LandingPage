@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="goals-and-motivations-img">
-      <img src="src/assets/img/planet.png" alt="planet">
+      <img src="/src/assets/img/planet.png" alt="planet">
     </div>
   </div>
 </div>

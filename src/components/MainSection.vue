@@ -5,7 +5,7 @@ import Newsletter from "@/components/Newsletter.vue";
 <template>
 <div class="main-section">
   <div class="main-section-logo-and-text">
-    <img class="main-section-logo" src="src/assets/img/logo-sharemyfood.png" alt="logo-sharemyfood">
+    <img class="main-section-logo" src="/src/assets/img/logo-sharemyfood.png" alt="logo-sharemyfood">
     <div class="main-section-text">
       <p>Avec ShareMyFood, vendez votre nourriture non consommée, et contribuons ensemble à la lutte contre le gaspillage alimentaire !</p>
       <br>

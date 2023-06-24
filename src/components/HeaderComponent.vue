@@ -7,8 +7,8 @@
       <a href="#team">Notre équipe</a>
     </div>
     <div class="header-burger-menu">
-      <img v-show="!isOpen" class="burger-menu-icon" @click="toggleMenu" src="src/assets/img/burger_menu.png" alt="">
-      <img v-show="isOpen" class="close-menu-icon" @click="toggleMenu" src="src/assets/img/close.png" alt="">
+      <img v-show="!isOpen" class="burger-menu-icon" @click="toggleMenu" src="/src/assets/img/burger_menu.png" alt="">
+      <img v-show="isOpen" class="close-menu-icon" @click="toggleMenu" src="/src/assets/img/close.png" alt="">
       <div v-show="isOpen" class="header-burger-menu-container">
         <a href="#whoweare">Qui sommes-nous</a>
         <a href="#goals">Nos objectifs</a>

@@ -16,8 +16,8 @@
       </div>
 
       <div class="what-is-sharemyfood-screenshots">
-        <img src="src/assets/img/screenshot-sharemyfood2.png" alt="screenshot2">
-        <img class="screenshot-img1" src="src/assets/img/screenshot-sharemyfood.png" alt="screenshot">
+        <img src="/src/assets/img/screenshot-sharemyfood2.png" alt="screenshot2">
+        <img class="screenshot-img1" src="/src/assets/img/screenshot-sharemyfood.png" alt="screenshot">
       </div>
     </div>
   </div>
