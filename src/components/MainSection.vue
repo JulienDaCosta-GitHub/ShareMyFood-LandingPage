@@ -1,16 +1,16 @@
 <template>
-<div class="main-section">
-  <div class="main-section-logo-and-text">
-    <img class="main-section-logo" src="/src/assets/img/logo-sharemyfood.png" alt="logo-sharemyfood">
-    <div class="main-section-text">
-      <p>Avec ShareMyFood, vendez votre nourriture non consommée, et contribuons ensemble à la lutte contre le gaspillage alimentaire !</p>
-      <br>
-      <p>Soyez au courant des dernières informations en vous inscrivant à notre newsletter !</p>
-      <br>
+  <div class="main-section">
+    <div class="main-section-logo-and-text">
+      <img class="main-section-logo" src="/src/assets/img/logo-sharemyfood.png" alt="logo-sharemyfood">
+      <div class="main-section-text">
+        <p>Avec ShareMyFood, vendez votre nourriture non consommée, et contribuons ensemble à la lutte contre le gaspillage alimentaire !</p>
+        <br>
+        <p>Soyez au courant des dernières informations en vous inscrivant à notre newsletter !</p>
+        <br>
+      </div>
+      <Newsletter></Newsletter>
     </div>
-    <Newsletter></Newsletter>
   </div>
-</div>
 </template>
 
 <script lang="ts">
