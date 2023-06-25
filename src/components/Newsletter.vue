@@ -10,8 +10,9 @@
 <script lang="ts">
 import { collection, addDoc } from "firebase/firestore";
 import { db } from '@/main';
+import { defineComponent } from "vue";
 
-export default {
+export default defineComponent({
   name: "Newsletter",
   data() {
     return {
@@ -21,7 +22,7 @@ export default {
     };
   },
   methods: {
-    async handleSubmit() {
+    async handleSubmit(): Promise<void> {
       try {
         const docRef = await addDoc(collection(db, "contacts"), this.formData);
         console.log("Document ajouté avec ID :", docRef.id);
@@ -30,7 +31,7 @@ export default {
       }
     }
   }
-};
+});
 </script>
 
 <style scoped>
