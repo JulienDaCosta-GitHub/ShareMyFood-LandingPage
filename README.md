@@ -1,6 +1,6 @@
 # ShareMyFood-LandingPage
 
-Projet IWM pour le projet Devlab 2022-2023 : ShareMyFood
+Projet IWM (IIM) pour le projet Devlab 2022-2023 : ShareMyFood
 
 ## Lancement du projet en local
 
