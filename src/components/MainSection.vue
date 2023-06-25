@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import Newsletter from "@/components/Newsletter.vue";
-</script>
-
 <template>
 <div class="main-section">
   <div class="main-section-logo-and-text">
@@ -18,8 +14,13 @@ import Newsletter from "@/components/Newsletter.vue";
 </template>
 
 <script lang="ts">
+import Newsletter from "@/components/Newsletter.vue";
+
 export default {
-  name: "MainSection"
+  name: "MainSection",
+  components: {
+    Newsletter
+  }
 };
 </script>
 
