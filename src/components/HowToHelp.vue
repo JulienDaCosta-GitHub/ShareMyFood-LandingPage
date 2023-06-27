@@ -4,7 +4,7 @@
       <h2>Comment nous aider ?</h2>
       <p>Nous sommes une organisation à but non lucratif qui dépend de nos utilisateurs pour réaliser notre mission. Si vous souhaitez nous aider, il y a plusieurs façons de le faire. Vous pouvez tout d'abord remplir notre formulaire afin de nous donner des conseils ou nous faire des recommandations qui pourraient nous permettre de nous améliorer. Nous lirons vos réponses avec grand plaisir. Vous pouvez également nous aider en parlant de nous autour de vous et en partageant notre message sur les réseaux sociaux. Chaque geste compte et nous sommes reconnaissants pour votre soutien à notre cause. Merci d'avance pour votre aide !</p>
       <div class="how-to-help-btn">
-        <button>Notre formulaire</button>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXWxccHsMamt99OzaqTUTj2YmTBkbeSzT6jWVu5yxH3mEt4A/viewform" target="_blank"><button>Notre formulaire</button></a>
       </div>
     </div>
   </div>
