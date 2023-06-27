@@ -1,26 +1,29 @@
 <template>
   <div class="header-container">
     <div class="header-redirections-container">
-      <a href="#whoweare">Qui sommes-nous</a>
-      <a href="#goals">Nos objectifs</a>
-      <a href="#help">Comment nous aider</a>
-      <a href="#team">Notre équipe</a>
+      <a @click="scrollToSection('#whoweare')">Qui sommes-nous</a>
+      <a @click="scrollToSection('#goals')">Nos objectifs</a>
+      <a @click="scrollToSection('#help')">Comment nous aider</a>
+      <a @click="scrollToSection('#team')">Notre équipe</a>
     </div>
     <div class="header-burger-menu">
       <img v-show="!isOpen" class="burger-menu-icon" @click="toggleMenu" src="/src/assets/img/burger_menu.png" alt="">
       <img v-show="isOpen" class="close-menu-icon" @click="toggleMenu" src="/src/assets/img/close.png" alt="">
       <div v-show="isOpen" class="header-burger-menu-container">
-        <a href="#whoweare">Qui sommes-nous</a>
-        <a href="#goals">Nos objectifs</a>
-        <a href="#help">Comment nous aider</a>
-        <a href="#team">Notre équipe</a>
+        <a @click="scrollToSection('#whoweare')">Qui sommes-nous</a>
+        <a @click="scrollToSection('#goals')">Nos objectifs</a>
+        <a @click="scrollToSection('#help')">Comment nous aider</a>
+        <a @click="scrollToSection('#team')">Notre équipe</a>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-export default {
+import VueScrollTo from 'vue-scrollto';
+import { defineComponent } from "vue";
+
+export default defineComponent( {
   name: "HeaderComponent",
   data() {
     return {
@@ -30,9 +33,12 @@ export default {
   methods: {
     toggleMenu() {
       this.isOpen = !this.isOpen;
-    }
+    },
+    scrollToSection(sectionId: any) {
+      VueScrollTo.scrollTo(sectionId, 500);
+    },
   }
-};
+});
 </script>
 
 <style scoped>
@@ -49,6 +55,7 @@ export default {
   margin: 0 20px;
   font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
 }
 
 @media (max-width: 991.98px) {
@@ -82,6 +89,7 @@ export default {
     color: white;
     font-weight: 600;
     text-decoration: none;
+    cursor: pointer;
   }
   .header-burger-menu-container a:not(:first-child) {
     margin-top: 15px;
