@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "firebase": "^9.22.2",
+    "sweetalert2": "^11.7.12",
     "vue": "^3.2.47",
     "vue-scrollto": "^2.20.0"
   },

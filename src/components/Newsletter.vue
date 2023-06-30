@@ -11,6 +11,7 @@
 import { collection, addDoc } from "firebase/firestore";
 import { db } from '@/main';
 import { defineComponent } from "vue";
+import Swal from "sweetalert2";
 
 export default defineComponent({
   name: "Newsletter",
@@ -26,8 +27,22 @@ export default defineComponent({
       try {
         const docRef = await addDoc(collection(db, "contacts"), this.formData);
         console.log("Document ajouté avec ID :", docRef.id);
+        Swal.fire({
+          title: 'Succès',
+          text: 'Inscription à la newsletter réussie',
+          icon: 'success',
+          confirmButtonColor: '#6FAE3A',
+        });
+        this.formData.email = '';
       } catch (error) {
         console.error("Erreur lors de l'ajout du document :", error);
+        Swal.fire({
+          title: 'Echec',
+          text: 'Inscription à la newsletter échouée',
+          icon: 'error',
+          confirmButtonColor: '#FF0000',
+        });
+        this.formData.email = '';
       }
     }
   }
