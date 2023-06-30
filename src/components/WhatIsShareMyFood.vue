@@ -74,6 +74,11 @@ export default {
   font-family: 'Quicksand', sans-serif;
 }
 
+.application-test-btn button:hover {
+  background-color: black;
+  color: white;
+}
+
 button:hover {
   cursor: pointer;
 }

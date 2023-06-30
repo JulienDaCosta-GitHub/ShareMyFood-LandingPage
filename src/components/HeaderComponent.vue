@@ -58,6 +58,10 @@ export default defineComponent( {
   cursor: pointer;
 }
 
+.header-redirections-container a:hover {
+  color: black;
+}
+
 @media (max-width: 991.98px) {
   .header-redirections-container {
     display: none;

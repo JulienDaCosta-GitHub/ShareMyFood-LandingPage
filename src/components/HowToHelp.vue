@@ -54,6 +54,11 @@ export default {
   font-family: 'Quicksand', sans-serif;
 }
 
+.how-to-help-btn button:hover {
+  background-color: black;
+  color: white;
+}
+
 button:hover {
   cursor: pointer;
 }

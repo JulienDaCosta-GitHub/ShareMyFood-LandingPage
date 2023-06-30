@@ -12,6 +12,17 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from '@/main';
 import { defineComponent } from "vue";
 import Swal from "sweetalert2";
+import axios from 'axios';
+import sgMail from '@sendgrid/mail';
+
+// axios.get('/configapi.json')
+//     .then(response => {
+//       const apiKey = response.data.apiKey;
+//       sgMail.setApiKey(apiKey);
+//     })
+//     .catch(error => {
+//       console.error('Erreur lors du chargement du fichier de configuration', error);
+//     });
 
 export default defineComponent({
   name: "Newsletter",
@@ -25,8 +36,22 @@ export default defineComponent({
   methods: {
     async handleSubmit(): Promise<void> {
       try {
-        const docRef = await addDoc(collection(db, "contacts"), this.formData);
-        console.log("Document ajouté avec ID :", docRef.id);
+        await addDoc(collection(db, "contacts"), this.formData);
+        // const msg = {
+        //   to: this.formData.email,
+        //   from: 'sharemyfoodiwm@gmail.com',
+        //   subject: 'Bienvenue chez ShareMyFood',
+        //   text: 'Votre inscription à notre newsletter est un succès ! Nous vous donnerons rapidement des nouvelles sur notre projet. Nous vous remercions pour votre soutien !',
+        // };
+
+        // sgMail.send(msg)
+        //     .then(() => {
+        //       console.log('Email sent');
+        //     })
+        //     .catch((error) => {
+        //       console.error(error);
+        //     });
+
         Swal.fire({
           title: 'Succès',
           text: 'Inscription à la newsletter réussie',
@@ -35,7 +60,6 @@ export default defineComponent({
         });
         this.formData.email = '';
       } catch (error) {
-        console.error("Erreur lors de l'ajout du document :", error);
         Swal.fire({
           title: 'Echec',
           text: 'Inscription à la newsletter échouée',
@@ -73,6 +97,12 @@ export default defineComponent({
   margin-left: 25px;
   font-size: 22px;
   font-family: 'Quicksand', sans-serif;
+}
+
+.newsletter-container button:hover {
+  background-color: white;
+  color: #6FAE3A;
+  border: solid 1px #6FAE3A;
 }
 
 button:hover {
