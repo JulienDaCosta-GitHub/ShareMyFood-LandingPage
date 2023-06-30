@@ -49,11 +49,8 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.newsletter-container {
-  width: 800px;
-}
 .newsletter-container input {
-  width: 500px;
+  width: 50%;
   height: 50px;
   border-radius: 20px;
   border: solid 1px;
@@ -78,6 +75,7 @@ export default defineComponent({
   background-color: white;
   color: #6FAE3A;
   border: solid 1px #6FAE3A;
+  transition: all 0.3s ease;
 }
 
 button:hover {

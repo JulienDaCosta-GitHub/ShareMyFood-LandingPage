@@ -60,6 +60,7 @@ export default defineComponent( {
 
 .header-redirections-container a:hover {
   color: black;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 991.98px) {

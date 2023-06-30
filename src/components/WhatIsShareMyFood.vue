@@ -9,7 +9,7 @@
             <br>
             <p>Il s’agit d’une solution pratique pour éviter le gaspillage alimentaire et encourager le partage de nourriture entre les membres de la communauté. Elle permet également de favoriser la réduction de la production de déchets alimentaires et de contribuer à la protection de l'environnement.</p>
             <br>
-            <p style="font-weight: bold">Vous pouvez dès maintenant tester notre application en téléchargeant l'apk avec le bouton ci-dessous !</p>
+            <p style="font-weight: bold">Vous pouvez dès maintenant tester notre application sur Android en téléchargeant l'apk avec le bouton ci-dessous !</p>
           </div>
         </div>
         <div class="application-test-btn">
@@ -88,9 +88,7 @@ export default {
 .application-test-btn button:hover {
   background-color: black;
   color: white;
-}
-
-button:hover {
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 

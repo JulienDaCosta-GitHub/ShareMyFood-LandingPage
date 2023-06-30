@@ -57,9 +57,7 @@ export default {
 .how-to-help-btn button:hover {
   background-color: black;
   color: white;
-}
-
-button:hover {
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
