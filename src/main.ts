@@ -3,9 +3,6 @@ import App from './App.vue';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import './assets/main.css'
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 createApp(App).mount('#app')
 

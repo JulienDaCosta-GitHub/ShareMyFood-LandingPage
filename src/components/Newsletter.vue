@@ -12,17 +12,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from '@/main';
 import { defineComponent } from "vue";
 import Swal from "sweetalert2";
-import axios from 'axios';
-import sgMail from '@sendgrid/mail';
 
-// axios.get('/configapi.json')
-//     .then(response => {
-//       const apiKey = response.data.apiKey;
-//       sgMail.setApiKey(apiKey);
-//     })
-//     .catch(error => {
-//       console.error('Erreur lors du chargement du fichier de configuration', error);
-//     });
 
 export default defineComponent({
   name: "Newsletter",
@@ -37,29 +27,6 @@ export default defineComponent({
     async handleSubmit(): Promise<void> {
       try {
         await addDoc(collection(db, "contacts"), this.formData);
-        const apiKey = process.env.SENDGRID_API_KEY;
-
-        if (apiKey) {
-          sgMail.setApiKey(apiKey);
-          console.log(apiKey)
-        } else {
-          console.log("La clé d'API SendGrid n'est pas définie. Vérifiez votre configuration.");
-        }
-        const msg = {
-          to: this.formData.email,
-          from: 'sharemyfoodiwm@gmail.com',
-          subject: 'Bienvenue chez ShareMyFood',
-          text: 'Votre inscription à notre newsletter est un succès ! Nous vous donnerons rapidement des nouvelles sur notre projet. Nous vous remercions pour votre soutien !',
-        };
-
-        sgMail.send(msg)
-            .then(() => {
-              console.log('Email sent');
-            })
-            .catch((error) => {
-              console.error(error);
-            });
-
         Swal.fire({
           title: 'Succès',
           text: 'Inscription à la newsletter réussie',
