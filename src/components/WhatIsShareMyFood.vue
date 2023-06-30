@@ -8,10 +8,12 @@
             <p>ShareMyFood est une application innovante de partage de nourriture conçue pour permettre aux utilisateurs de donner ou vendre de la nourriture non consommée à d'autres personnes qui en ont besoin.</p>
             <br>
             <p>Il s’agit d’une solution pratique pour éviter le gaspillage alimentaire et encourager le partage de nourriture entre les membres de la communauté. Elle permet également de favoriser la réduction de la production de déchets alimentaires et de contribuer à la protection de l'environnement.</p>
+            <br>
+            <p style="font-weight: bold">Vous pouvez dès maintenant tester notre application en téléchargeant l'apk avec le bouton ci-dessous !</p>
           </div>
         </div>
         <div class="application-test-btn">
-          <button>Tester l'application</button>
+          <button @click="downloadApk">Télécharger l'apk</button>
         </div>
       </div>
 
@@ -25,7 +27,16 @@
 
 <script lang="ts">
 export default {
-  name: "WhatIsShareMyFood"
+  name: "WhatIsShareMyFood",
+  methods: {
+    downloadApk() {
+      const fileUrl = "/app-release.apk";
+      const link = document.createElement("a");
+      link.href = fileUrl;
+      link.setAttribute("download", "");
+      link.click();
+    },
+  },
 };
 </script>
 
