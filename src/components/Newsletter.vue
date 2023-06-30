@@ -37,20 +37,28 @@ export default defineComponent({
     async handleSubmit(): Promise<void> {
       try {
         await addDoc(collection(db, "contacts"), this.formData);
-        // const msg = {
-        //   to: this.formData.email,
-        //   from: 'sharemyfoodiwm@gmail.com',
-        //   subject: 'Bienvenue chez ShareMyFood',
-        //   text: 'Votre inscription à notre newsletter est un succès ! Nous vous donnerons rapidement des nouvelles sur notre projet. Nous vous remercions pour votre soutien !',
-        // };
+        const apiKey = process.env.SENDGRID_API_KEY;
 
-        // sgMail.send(msg)
-        //     .then(() => {
-        //       console.log('Email sent');
-        //     })
-        //     .catch((error) => {
-        //       console.error(error);
-        //     });
+        if (apiKey) {
+          sgMail.setApiKey(apiKey);
+          console.log(apiKey)
+        } else {
+          console.log("La clé d'API SendGrid n'est pas définie. Vérifiez votre configuration.");
+        }
+        const msg = {
+          to: this.formData.email,
+          from: 'sharemyfoodiwm@gmail.com',
+          subject: 'Bienvenue chez ShareMyFood',
+          text: 'Votre inscription à notre newsletter est un succès ! Nous vous donnerons rapidement des nouvelles sur notre projet. Nous vous remercions pour votre soutien !',
+        };
+
+        sgMail.send(msg)
+            .then(() => {
+              console.log('Email sent');
+            })
+            .catch((error) => {
+              console.error(error);
+            });
 
         Swal.fire({
           title: 'Succès',

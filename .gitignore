@@ -15,6 +15,7 @@ coverage
 *.local
 configapi.json
 .vite
+.env
 
 /cypress/videos/
 /cypress/screenshots/
