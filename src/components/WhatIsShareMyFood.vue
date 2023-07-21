@@ -30,7 +30,7 @@ export default {
   name: "WhatIsShareMyFood",
   methods: {
     downloadApk() {
-      const fileUrl = "/app-release.apk";
+      const fileUrl = "/ShareMyFood.apk";
       const link = document.createElement("a");
       link.href = fileUrl;
       link.setAttribute("download", "");
